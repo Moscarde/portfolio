@@ -222,6 +222,20 @@ i.menu-mobile {
     display: none;
 }
 
+/* Footer */
+#footer {
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background-color: #021124;
+    transform: .3s;
+}
+
 /* Flash Alert */
 #flash-alert {
     position: fixed;
@@ -312,6 +326,12 @@ i.menu-mobile {
 
     #main {
         margin-left: 0;
+    }
+
+    #footer {
+        position: static;
+        width: 100%;
+        padding: 20px 15px;
     }
 
 }
