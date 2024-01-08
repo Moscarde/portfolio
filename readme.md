@@ -1,4 +1,4 @@
-# Projeto Portifólio Responsivo com Flask e Bootstrap 
+# Projeto Portfólio Responsivo com Flask e Bootstrap 
 
 ## Disclaimer
 Este projeto foi desenvolvido apenas para estudos e práticas, o conteúdo nele não reflete valores reais.
