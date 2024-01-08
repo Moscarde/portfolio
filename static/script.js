@@ -45,3 +45,16 @@ window.addEventListener("scroll", () => {
     
     animeScroll()
 })
+
+// Spinner
+const btnEnviar = document.querySelector("#btn-send")
+const btnEnviarSpinner = document.querySelector("#btn-send-spinner")
+
+btnEnviar.addEventListener("click", () => {
+    btnEnviarSpinner.style.display = "block"
+    btnEnviar.style.display = "none"
+})
+
+setTimeout(() => {
+    document.querySelector("#flash-alert").style.display = "none";
+}, 5000)

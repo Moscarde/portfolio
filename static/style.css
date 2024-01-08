@@ -170,8 +170,6 @@ i.menu-mobile {
     position: relative;
 }
 
-
-
 .cv .cv-item h4 {
     line-height: 30px;
     font-weight: 600;
@@ -219,6 +217,19 @@ i.menu-mobile {
     object-fit: cover;
 }
 
+/* Form */
+#btn-send-spinner {
+    display: none;
+}
+
+/* Flash Alert */
+#flash-alert {
+    position: fixed;
+    z-index: 10;
+    top:30px;
+    right: 30px;
+}
+
 
 /* Custom Scroll Bar */
 *::-webkit-scrollbar {
@@ -252,11 +263,11 @@ i.menu-mobile {
 }
 
 [data-anime="left"] {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-50px, 0, 0);
 }
 
 [data-anime="right"] {
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(50px, 0, 0);
 }
 
 [data-anime].animate {

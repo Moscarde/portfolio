@@ -37,7 +37,8 @@ def index():
 
 @app.route("/send", methods=["GET", "POST"])
 def send():
-    if request.methods == "POST":
+    print('----------------', request.method)
+    if request.method == "POST":
         formContato = Contato(
             request.form["nome"], request.form["email"], request.form["mensagem"]
         )
@@ -54,6 +55,7 @@ Mensagem: {formContato.mensagem}
 
         mail.send(msg)
         flash("Mensagem enviada com sucesso!", "success")
+
     return redirect("/")
 
 
