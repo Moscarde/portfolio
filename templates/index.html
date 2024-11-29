@@ -62,11 +62,25 @@
 
     <main id="main">
         <section id="inicio" class="row m-0 p-0">
-            <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
+            <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
                 <h2 class="text-white text-shadow">Gabriel Moscarde</h2>
-                <span id="subtitle" class="text-white text-shadow">Desenvolvedor Python Full Stack</span>
+                <span id="subtitle" class="text-white text-shadow">Engenheiro de Dados Junior</span>
             </div>
-            <div class="col-md-7 d-flex justify-content-end align-items-end">
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <!-- Novo contêiner para o fundo com efeito luminoso -->
+                <div class="coffee">
+
+                    <div class="coffee-background"></div>
+                    <!-- Imagem do café -->
+                    <div class="coffee-icon-wrapper">
+                        <img id="coffee-icon" class="img-fluid" src="../static/img/coffee.png" alt="Foto de perfil">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3 d-flex justify-content-end align-items-end">
                 <div id="arraste" class="d-flex align-items-center">
                     <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
                     <a href="#sobre">Arraste para mais</a>
@@ -79,15 +93,11 @@
                 <div class="col-md-12" data-anime="down">
                     <h2 class="pt-3">Sobre</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatum. Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Doloremque, voluptatum. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloremque, voluptatum.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatum.Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Doloremque, voluptatum.Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloremque, voluptatum.Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Doloremque, voluptatum.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatum.
+                        Engenheiro de Dados Júnior com conhecimento prático em coleta e processamento de dados via web
+                        scraping e APIs, automação de processos e desenvolvimento de pipelines eficientes. Conhecimentos
+                        sólidos no desenvolvimento e versionamento de códigos para manipulação, obtenção e gestão dos
+                        dados utilizando Python e bibliotecas como Pandas, SQLAlchemy, Polars, DuckDB, Selenium,
+                        BeautifulSoup, entre outras.
                     </p>
                 </div>
 
@@ -468,6 +478,7 @@
                 <h2 class="pt-3 pb-3">Contato</h2>
 
                 <div class="row">
+                    <!-- mapa -->
                     <div class="col-md-5" data-anime="left">
                         <div class="card p-5 shadow border-0">
                             <div class="endereco">
@@ -486,6 +497,8 @@
                                 referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
                         </div>
                     </div>
+
+                    <!-- formulario -->
                     <div class="col-md-7 mt-5 mt-md-0" data-anime="right">
                         <div class="card p-5 w-100 shadow border-0">
 
