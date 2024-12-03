@@ -3,130 +3,45 @@
         <h2 class="display-2">Últimos Artigos</h2>
         <div id="carrouselArticles" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carrouselArticles" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carrouselArticles" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
+                <!-- Os indicadores serão gerados dinamicamente -->
+                {% for i in range(0, data_articles|length, 3) %}
+                    <button type="button" data-bs-target="#carrouselArticles" data-bs-slide-to="{{ loop.index0 }}" 
+                            class="{{ 'active' if loop.index == 1 else '' }}" aria-label="Slide {{ loop.index }}"></button>
+                {% endfor %}
             </div>
+
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="6000">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="../static/img/folium.jpg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Folium: Criando mapas interativos com dados reais de forma simples</h5>
-                                    <p class="card-text">Exploração de funcionalidades da biblioteca folium.</p>
-                                    <div class="d-flex justify-content-center ">
-                                        <a href="https://moscarde.medium.com/folium-criando-mapas-interativos-com-dados-reais-de-forma-simples-c20ab89b5c79"
-                                            class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-medium"></i></a>
+                <!-- Gerar os slides de forma dinâmica, com 3 projetos por slide -->
+                {% for i in range(0, data_articles|length, 3) %}
+                    <div class="carousel-item {{ 'active' if loop.index == 1 else '' }}" data-bs-interval="5000">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- Criar as colunas dos projetos dentro do slide -->
+                            {% for article in data_articles[i:i+3] %}
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="{{ article.image }}" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ article.title }}</h5>
+                                            <p class="card-text">{{ article.description }}</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="{{ article.url }}" class="btn btn-outline-dark" target="_blank">
+                                                    <i class="bi bi-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*k2lKeIrfbF7nTjVgNt7sQg.jpeg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Python e Cookies 🍪: Guia de Automação de Tarefas com Python e Selenium</h5>
-                                    <p class="card-text">Fundamentos de automação web usando Python com Selenium e, algumas dicas que aprendi com o tempo.</p>
-                                    <div class="d-flex justify-content-center">
-
-                                        <a href="https://moscarde.medium.com/python-e-cookies-guia-de-automa%C3%A7%C3%A3o-de-tarefas-com-python-e-selenium-6b3d796e1c63"
-                                            class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-medium"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*izPID6yIiZtGRntNf96Tow.jpeg"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Explorando o SQLAlchemy: ORM e Operações CRUD com Python</h5>
-                                    <p class="card-text">Exploração de funcionalidades de operações CRUD com a biblioteca SQLAlchemy</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="https://moscarde.medium.com/explorando-o-sqlalchemy-orm-e-opera%C3%A7%C3%B5es-crud-com-python-da9914df0eaa" class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-medium"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
-                </div>
-
-                <div class="carousel-item" data-bs-interval="5000">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://user-images.githubusercontent.com/98126579/197552268-8e7a4aea-5790-4cfb-b649-141c08037e32.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Otimizando Scripts em Python: Lições Aprendidas com Processamento Paralelo</h5>
-                                    <p class="card-text">Analisando o desempenho de scripts em Python com e sem paralelismo.</p>
-
-                                    <div class="d-flex justify-content-center">
-                                        <a href="https://moscarde.medium.com/otimizando-scripts-em-python-li%C3%A7%C3%B5es-aprendidas-com-processamento-paralelo-7b8d3e17d659" class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-medium"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*oLbI8ubtRpw7UDSzH4hLEA.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Benchmark Engines de Processamento de Dados — POLARS X PANDAS X DUCKDB</h5>
-                                    <p class="card-text">Testes comparativos entre diferentes engines de processamento de dados para identificar a melhor opção para nossa pipeline de ETL.</p>
-
-                                    <div class="d-flex justify-content-center">
-                                        <!-- <a href="#" class="btn btn-outline-primary me-3" target="_blank"><i
-                                                class="bi bi-link-45deg"></i></a> -->
-
-                                        <a href="https://moscarde.medium.com/benchmark-engines-de-processamento-de-dados-polars-x-pandas-x-duckdb-3ae25a60f92c" class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-medium"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*TCh7qNtdpvXwht_K2l0_WQ.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Importação e tratamento de dados de multiplas planilhas Excel no Power BI</h5>
-                                    <p class="card-text">Abordagens para importação e tratamento de dados de multiplas planilhas Excel no Power BI</p>
-
-                                    <div class="d-flex justify-content-center">
-                                        <!-- <a href="#" class="btn btn-outline-primary me-3" target="_blank"><i
-                                                class="bi bi-link-45deg"></i></a> -->
-
-                                        <a href="https://moscarde.medium.com/importa%C3%A7%C3%A3o-e-tratamento-de-dados-de-multiplas-planilhas-excel-no-power-bi-5027b9e52afd" class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-medium"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
+                {% endfor %}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrouselArticles"
-                data-bs-slide="prev">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrouselArticles" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrouselArticles"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carrouselArticles" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

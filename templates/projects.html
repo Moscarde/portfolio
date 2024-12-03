@@ -4,129 +4,48 @@
 
         <div id="carrouselProjects" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carrouselProjects" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carrouselProjects" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
+                <!-- Os indicadores serão gerados dinamicamente -->
+                {% for i in range(0, data_projects|length, 3) %}
+                    <button type="button" data-bs-target="#carrouselProjects" data-bs-slide-to="{{ loop.index0 }}" 
+                            class="{{ 'active' if loop.index == 1 else '' }}" aria-label="Slide {{ loop.index }}"></button>
+                {% endfor %}
             </div>
+
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="6000">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://github.com/Moscarde/data-engines-benchmark/raw/main/images/header.png"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Data Engines Benchmark</h5>
-                                    <p class="card-text">Estudo comparativo entre engines de processamento de
-                                        dados em um projeto real.</p>
-                                    <div class="d-flex justify-content-center">
-
-
-                                        <a href="https://github.com/Moscarde/data-engines-benchmark"
-                                            class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-github"></i></a>
+                <!-- Gerar os slides de forma dinâmica, com 3 projetos por slide -->
+                {% for i in range(0, data_projects|length, 3) %}
+                    <div class="carousel-item {{ 'active' if loop.index == 1 else '' }}" data-bs-interval="5000">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- Criar as colunas dos projetos dentro do slide -->
+                            {% for project in data_projects[i:i+3] %}
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="{{ project.image }}" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ project.title }}</h5>
+                                            <p class="card-text">{{ project.description }}</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="{{ project.url }}" class="btn btn-outline-dark" target="_blank">
+                                                    <i class="bi bi-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            {% endfor %}
                         </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://github.com/Moscarde/PythonPostMaker/raw/main/screenshots/anon_false.png"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Python Post Maker</h5>
-                                    <p class="card-text">Projeto para automatizar a criação de postagens no
-                                        Instagram coletando data de posts no Linkedin.</p>
-                                    <div class="d-flex justify-content-center">
-
-                                        <a href="https://github.com/Moscarde/PythonPostMaker"
-                                            class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://github.com/Moscarde/perfect_resume_finder/raw/main/screenshots/screenshot_home.png"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perfect Resume Finder (Em desenvolvimento)</h5>
-                                    <p class="card-text">Aplicação com interface para gerenciar um banco de
-                                        dados de curriculos assim como facilitar o uso dos recruiters.</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="https://github.com/Moscarde/perfect_resume_finder" class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        
-
                     </div>
-                </div>
-
-                <div class="carousel-item" data-bs-interval="5000">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://user-images.githubusercontent.com/98126579/197552268-8e7a4aea-5790-4cfb-b649-141c08037e32.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">SouJunior Data Plataform (Em desenvolvimento)</h5>
-                                    <p class="card-text">Este projeto tem como objetivo gerenciar múltiplos
-                                        pipelines de dados que irão alimentar uma plataforma de dados com
-                                        arquitetura medalion (stage, raw e clean).</p>
-
-                                    <div class="d-flex justify-content-center">
-                                        <a href="https://github.com/Moscarde/Ilimidados-Platform" class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <img src="../static/img/junior zone.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Junior Zone</h5>
-                                    <p class="card-text">Junior Zone é um projeto para ajudar desenvolvedores e
-                                        analistas iniciantes a encontrarem com facilidade boas oportunidades de
-                                        vagas de emprego.</p>
-
-                                    <div class="d-flex justify-content-center">
-                                        <!-- <a href="#" class="btn btn-outline-primary me-3" target="_blank"><i
-                                                class="bi bi-link-45deg"></i></a> -->
-
-                                        <a href="https://github.com/Moscarde/Junior_Zone" class="btn btn-outline-dark" target="_blank"><i
-                                                class="bi bi-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
+                {% endfor %}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrouselProjects"
-                data-bs-slide="prev">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrouselProjects" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrouselProjects"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carrouselProjects" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
-
 </section>

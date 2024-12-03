@@ -65,15 +65,15 @@
 
     <main id="main">
 
-        {% block content %}
-            {% include "home.html" %}
-            {% include "about.html" %}
-            {% include "skills.html" %}
-            {% include "resume.html" %}
-            {% include "projects.html" %}
-            {% include "articles.html" %}
-            {% include "contact.html" %}
-        {% endblock %}
+{% block content %}
+    {% include "home.html" %}
+    {% include "about.html" %}
+    {% include "skills.html" %}
+    {% include "resume.html" %}
+    {% include "projects.html" %}
+    {% include "articles.html" %}
+    {% include "contact.html" %}
+{% endblock %}
 
         <!-- Flask Flashes Message -->
         {% with messages = get_flashed_messages() %}
