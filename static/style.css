@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* Variables */
+/* VARS */
 :root {
     --color-primary: #149ddd;
     --color-secondary: #2e4f4f;
@@ -17,6 +17,7 @@ body {
     height: 100%;
 }
 
+/* ASIDE */
 #header {
     position: fixed;
     top: 0;
@@ -100,11 +101,25 @@ body {
     color: #149ddd;
 }
 
+
+.menu-nav-active {
+    overflow: hidden;
+}
+
+.menu-nav-active #header {
+    left: 0;
+}
+
+.section-bg {
+    background-color: #f5f8fd;
+}
+
 #main {
     margin-left: 300px;
 }
 
-section#inicio {
+/* HOME */
+section#home {
     background-image: url("./img/PolygonLuminary.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,11 +129,11 @@ section#inicio {
     height: 100vh;
 }
 
-section#inicio h2 {
+section#home h2 {
     font-size: 5rem;
 }
 
-section#inicio span#subtitle {
+section#home span#subtitle {
     /* margin-right: 8rem; */
     font-size: 1.5rem;
 }
@@ -156,7 +171,7 @@ section#inicio span#subtitle {
     filter: blur(10px);
     /* Aplica o desfoque geral */
     background: radial-gradient(circle, rgba(24, 54, 179, 0.65) 40%, transparent 100%);
-    
+
 }
 
 /* Contêiner da imagem do café */
@@ -181,76 +196,16 @@ section#inicio span#subtitle {
     /* Fica acima do fundo */
 }
 
-/* Animação de flutuação e rotação para o ícone de café */
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        /* Posição inicial */
-    }
-
-    20% {
-        transform: translateY(-5px) rotate(3deg);
-        /* Leve subida com rotação */
-    }
-
-    40% {
-        transform: translateY(0) rotate(-3deg);
-        /* Volta à posição inicial com rotação para o outro lado */
-    }
-
-    60% {
-        transform: translateY(-8px) rotate(2deg);
-        /* Outra leve subida com rotação */
-    }
-
-    80% {
-        transform: translateY(0) rotate(-2deg);
-        /* Mais leve rotação enquanto volta à posição original */
-    }
-
-    100% {
-        transform: translateY(0) rotate(0deg);
-        /* Retorna à posição inicial sem rotação */
-    }
-}
-
-/* Animação de flutuação e rotação para o fundo */
-@keyframes float-background {
-    0% {
-        transform: translateY(0) translateX(0);
-        /* Posição inicial no centro */
-    }
-
-    25% {
-        transform: translateY(-15px) translateX(-5px);
-        /* Leve subida e movimento à esquerda */
-    }
-
-    50% {
-        transform: translateY(2px) translateX(5px);
-        /* Movimento para baixo e à direita */
-    }
-
-    75% {
-        transform: translateY(-6px) translateX(-7px);
-        /* Outra leve subida e movimento à esquerda */
-    }
-
-    100% {
-        transform: translateY(0) translateX(0);
-        /* Retorna à posição inicial no centro */
-    }
-}
-
-
-section#inicio div#arraste {
+section#home div#swipe {
     width: 9rem;
 }
 
-section#inicio div#arraste a {
+section#home div#swipe a {
     text-decoration: none;
     color: #fff;
 }
+
+/* ABOUT */
 .about-img {
     position: relative;
     width: 350px;
@@ -266,37 +221,34 @@ section#inicio div#arraste a {
     left: 0;
     right: 0;
     bottom: 0;
-    /* Cor branca com transparência */
     border-radius: 50%;
-    /* Tornar redondo */
     z-index: 0;
-    /* Fica atrás da imagem */
     animation: float-background 8s ease-in-out infinite;
     width: 100%;
-    /* Ajusta o tamanho da largura */
     height: 100%;
-    /* Ajusta o tamanho da altura */
     filter: blur(10px);
-    /* Aplica o desfoque geral */
     background: radial-gradient(circle, rgba(24, 54, 179, 0.65) 40%, transparent 100%);
 }
 
 .about-img-wrapper {
     position: relative;
-    max-width: 340px; /* Limita a largura da imagem a 300px */
+    max-width: 340px;
     height: auto;
     z-index: 1;
 }
 
 .about-img-wrapper img {
-    max-width: 340px; /* Limita a largura da imagem a 300px */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 50%; /* Deixa a imagem arredondada */
+    max-width: 340px;
+    height: auto;
+    border-radius: 50%;
     position: relative;
     z-index: 1;
 }
 
-
+/* SKILLS */
+section#skills {
+    min-height: 100vh;
+}
 
 .skills-grid {
     display: grid;
@@ -331,12 +283,12 @@ section#inicio div#arraste a {
     margin-bottom: 10px;
     transition: all .45s ease;
 }
+
 .s-icons img {
     width: 32px;
     height: 32px;
     margin-bottom: 10px;
 }
-
 
 .box h3 {
     margin-top: 10px;
@@ -359,33 +311,19 @@ i.menu-mobile {
     align-items: center;
 }
 
-section#habilidades {
-    min-height: 100vh;
-}
-
-.card{
+/* PROJECTS - ARTICLES */
+.card {
     min-height: 450px;
 }
 
-.card-body{
+.card-body {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
 }
 
-.menu-nav-active {
-    overflow: hidden;
-}
 
-.menu-nav-active #header {
-    left: 0;
-}
-
-.section-bg {
-    background-color: #f5f8fd;
-}
-
-/* Section Curriculo */
+/* RESUME */
 .cv .cv-title {
     font-weight: 700;
     margin-top: 20px;
@@ -519,6 +457,56 @@ section#habilidades {
     transform: translate3d(0, 0, 0);
 }
 
+/* Animação de flutuação e rotação para o ícone de café */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translateY(-5px) rotate(3deg);
+    }
+
+    40% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    60% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+
+    80% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* Animação de flutuação e rotação para o fundo */
+@keyframes float-background {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    25% {
+        transform: translateY(-15px) translateX(-5px);
+    }
+
+    50% {
+        transform: translateY(2px) translateX(5px);
+    }
+
+    75% {
+        transform: translateY(-6px) translateX(-7px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
 /* media queries */
 
 @media (max-width: 1860px) {
@@ -545,11 +533,11 @@ section#habilidades {
         display: flex;
     }
 
-    section#inicio h2 {
+    section#home h2 {
         font-size: 3rem;
     }
 
-    section#inicio,
+    section#home,
     span#subtitle {
         margin-right: 0;
         font-size: 1.2rem;
