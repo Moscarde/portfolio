@@ -359,6 +359,20 @@ i.menu-mobile {
     align-items: center;
 }
 
+section#habilidades {
+    min-height: 100vh;
+}
+
+.card{
+    min-height: 450px;
+}
+
+.card-body{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
 .menu-nav-active {
     overflow: hidden;
 }
