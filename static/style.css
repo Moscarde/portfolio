@@ -139,6 +139,10 @@ section#home {
     height: 100vh;
 }
 
+section#home > div:first-child {
+    height: 90vh;
+}
+
 section#home h2 {
     font-size: 5rem;
 }
@@ -193,7 +197,7 @@ section#home span#subtitle {
 }
 
 section#home div#swipe {
-    width: 9rem;
+    display: none;
 }
 
 section#home div#swipe a {
@@ -204,11 +208,10 @@ section#home div#swipe a {
 /* ABOUT */
 .about-img {
     position: relative;
-    width: 350px;
-    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 340px;
 }
 
 .about-img-background {
@@ -452,6 +455,10 @@ i.menu-mobile {
 @media (max-width: 1024px) {
     #header {
         left: -300px;
+    }
+
+    section#home div#swipe {
+        display: block;
     }
 
     i.menu-mobile {
