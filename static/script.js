@@ -1,60 +1,87 @@
-const menuMobile = document.querySelector(".menu-mobile")
-const body = document.querySelector("body")
+// Menu Mobile Toggle
+const menuMobile = document.querySelector(".menu-mobile");
+const body = document.querySelector("body");
 
 menuMobile.addEventListener("click", () => {
-    menuMobile.classList.contains("bi-list") ? menuMobile.classList.replace("bi-list", "bi-x") : menuMobile.classList.replace("bi-x", "bi-list")
-    body.classList.toggle("menu-nav-active")
-})
+    menuMobile.classList.toggle("bi-x");
+    menuMobile.classList.toggle("bi-list");
+    body.classList.toggle("menu-nav-active");
+});
 
+// Close Menu on Link Click
+const navItems = document.querySelectorAll(".nav-item");
 
-// Close menu when click on link
-
-const navItem = document.querySelectorAll(".nav-item")
-
-
-navItem.forEach((item) => {
+navItems.forEach((item) => {
     item.addEventListener("click", () => {
         if (body.classList.contains("menu-nav-active")) {
-            body.classList.remove("menu-nav-active")
-            menuMobile.classList.replace("bi-x", "bi-list")
+            body.classList.remove("menu-nav-active");
+            menuMobile.classList.replace("bi-x", "bi-list");
         }
-    })
-})
-console.log(navItem)
+    });
+});
 
+// Scroll Animations
+const animatedItems = document.querySelectorAll("[data-anime]");
 
-// Animations
-
-const item = document.querySelectorAll("[data-anime]")
-
-const animeScroll = () => {
+const handleScrollAnimations = () => {
     const windowTop = window.pageYOffset + window.innerHeight * 0.90;
 
-    item.forEach((element) => {
-        if (windowTop > element.offsetTop) {
-            element.classList.add("animate")
-        } else {
-            element.classList.remove("animate")
-        }
-    })
-}
+    animatedItems.forEach((element) => {
+        element.classList.toggle("animate", windowTop > element.offsetTop);
+    });
+};
 
-animeScroll()
+handleScrollAnimations();
+window.addEventListener("scroll", handleScrollAnimations);
 
-window.addEventListener("scroll", () => {
-    
-    animeScroll()
-})
-
-// Spinner
-const btnEnviar = document.querySelector("#btn-send")
-const btnEnviarSpinner = document.querySelector("#btn-send-spinner")
+// Spinner on Button Click
+const btnEnviar = document.querySelector("#btn-send");
+const btnEnviarSpinner = document.querySelector("#btn-send-spinner");
 
 btnEnviar.addEventListener("click", () => {
-    btnEnviarSpinner.style.display = "block"
-    btnEnviar.style.display = "none"
-})
+    btnEnviarSpinner.style.display = "block";
+    btnEnviar.style.display = "none";
 
-setTimeout(() => {
-    document.querySelector("#flash-alert").style.display = "none";
-}, 5000)
+    setTimeout(() => {
+        const flashAlert = document.querySelector("#flash-alert");
+        if (flashAlert) {
+            flashAlert.style.display = "none";
+        }
+    }, 5000);
+});
+
+// Navbar Active Link on Scroll
+const navLinks = document.querySelectorAll(".nav-link");
+
+const setActiveLink = () => {
+    const scrollPosition = window.pageYOffset + window.innerHeight / 2;
+
+    navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute("href"));
+
+        if (section) {
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        }
+    });
+};
+
+window.addEventListener("scroll", setActiveLink);
+document.addEventListener("DOMContentLoaded", setActiveLink);
+
+navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute("href"));
+        window.scrollTo({
+            top: target.offsetTop - 50,
+            behavior: "smooth"
+        });
+    });
+});
