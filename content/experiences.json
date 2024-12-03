@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Engenheiro de Dados (Voluntário)",
+        "local": "SouJunior (Remoto)",
+        "date": "JUN 2024 - ATUAL",
+        "description": "Conduzi um projeto comparativo entre diferentes engines de processamento de dados, incluindo Pandas, Polars e DuckDB, visando otimizar a performance de pipelines de ETL. Durante o projeto, participei da concepção e do desenvolvimento de uma solução voltada para tech recruiters, utilizando técnicas avançadas de processamento e armazenamento de dados, como indexação e Named Entity Recognition (NER). A solução incorporou tecnologias como spaCy e OpenCV para processamento de imagens e PDFs, além de técnicas de automação para otimização de workflows.",
+        "skills": "Pandas, Polars, DuckDB, ETL, Otimização de Processos, SQLAlchemy, Flask, MySQL, SQLite, ngrok, spaCy, OpenCV, PDFPlumber"
+    },
+    {
+        "title": "Analista de Dados (Voluntário)",
+        "local": "SouJunior (Remoto)",
+        "date": "JUN 2023 - DEZ 2024",
+        "description": "Participei ativamente da criação e apresentação de um Dashboard de Redes Sociais em Power BI durante a live de celebração dos 2 anos da SouJunior. Através dessa experiência, refinei minhas habilidades de storytelling e comunicação de dados, apresentando resultados de maneira clara e impactante. Colaborei na extração de dados e desenvolvimento do dashboard, desde a coleta até a implementação, utilizando PowerQuery para transformar os dados. Além disso, desenvolvi um script em Python com Selenium para automatizar a extração de dados de redes sociais, melhorando a precisão e eficiência do processo.",
+        "skills": "Power BI, PowerQuery, Apresentação de Dados, Storytelling, Figma, Visualização de Dados, Python, Pandas, Selenium, Automação de Dados, Web Scraping"
+    },
+    {
+        "title": "Vendedor e Coordenador de Produção",
+        "local": "MM Paletes",
+        "date": "2017 - DEZ 2024",
+        "description": "Liderando a criação da linha de móveis mais vendida da empresa, fui responsável por todos os aspectos, desde a concepção inicial até o produto final. Essa experiência me permitiu desenvolver habilidades de gestão de produto e coordenar equipes de produção, assegurando que os processos fossem eficientes e os padrões de qualidade atendidos. Através da implementação de melhorias no controle de estoque e na logística de entregas, fui capaz de reduzir custos operacionais e aumentar a satisfação dos clientes, gerando uma produção mais ágil e eficaz.",
+        "skills": "Gestão de Produto, Coordenação de Produção, Controle de Estoque, Logística, Redução de Custos, Melhoria de Processos"
+    }
+]

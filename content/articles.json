@@ -1,0 +1,38 @@
+[
+    {
+        "image": "../static/img/folium.jpg",
+        "title": "Folium: Criando mapas interativos com dados reais de forma simples",
+        "text": "Exploração de funcionalidades da biblioteca folium.",
+        "link": "https://moscarde.medium.com/folium-criando-mapas-interativos-com-dados-reais-de-forma-simples-c20ab89b5c79"
+    },
+    {
+        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*k2lKeIrfbF7nTjVgNt7sQg.jpeg",
+        "title": "Python e Cookies 🍪: Guia de Automação de Tarefas com Python e Selenium",
+        "text": "Fundamentos de automação web usando Python com Selenium e, algumas dicas que aprendi com o tempo.",
+        "link": "https://moscarde.medium.com/python-e-cookies-guia-de-automa%C3%A7%C3%A3o-de-tarefas-com-python-e-selenium-6b3d796e1c63"
+    },
+    {
+        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*izPID6yIiZtGRntNf96Tow.jpeg",
+        "title": "Explorando o SQLAlchemy: ORM e Operações CRUD com Python",
+        "text": "Exploração de funcionalidades de operações CRUD com a biblioteca SQLAlchemy",
+        "link": "https://moscarde.medium.com/explorando-o-sqlalchemy-orm-e-opera%C3%A7%C3%B5es-crud-com-python-da9914df0eaa"
+    },
+    {
+        "image": "https://user-images.githubusercontent.com/98126579/197552268-8e7a4aea-5790-4cfb-b649-141c08037e32.jpg",
+        "title": "Otimizando Scripts em Python: Lições Aprendidas com Processamento Paralelo",
+        "text": "Analisando o desempenho de scripts em Python com e sem paralelismo.",
+        "link": "https://moscarde.medium.com/otimizando-scripts-em-python-li%C3%A7%C3%B5es-aprendidas-com-processamento-paralelo-7b8d3e17d659"
+    },
+    {
+        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*oLbI8ubtRpw7UDSzH4hLEA.png",
+        "title": "Benchmark Engines de Processamento de Dados — POLARS X PANDAS X DUCKDB",
+        "text": "Testes comparativos entre diferentes engines de processamento de dados para identificar a melhor opção para nossa pipeline de ETL.",
+        "link": "https://moscarde.medium.com/benchmark-engines-de-processamento-de-dados-polars-x-pandas-x-duckdb-3ae25a60f92c"
+    },
+    {
+        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*TCh7qNtdpvXwht_K2l0_WQ.jpeg",
+        "title": "Importação e tratamento de dados de multiplas planilhas Excel no Power BI",
+        "text": "Abordagens para importação e tratamento de dados de multiplas planilhas Excel no Power BI",
+        "link": "https://moscarde.medium.com/importa%C3%A7%C3%A3o-e-tratamento-de-dados-de-multiplas-planilhas-excel-no-power-bi-5027b9e52afd"
+    }
+]
