@@ -1,0 +1,102 @@
+[
+    {
+        "img_type": "icon",
+        "img_src": "bx bxl-python",
+        "skill_name": "Python"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/simple-icons--pandas.svg",
+        "skill_name": "Pandas"
+    },
+    {
+        "img_type": "icon",
+        "img_src": "bx bx-data",
+        "skill_name": "SQL"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/simple-icons--polars.svg",
+        "skill_name": "Polars"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/simple-icons--duckdb.svg",
+        "skill_name": "DuckDB"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/simple-icons--selenium.svg",
+        "skill_name": "Selenium"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/material-symbols-light--soup-kitchen-outline-rounded.svg",
+        "skill_name": "BeautifulSoup"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/lineicons--mysql.svg",
+        "skill_name": "MySQL"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/arcticons--microsoft-power-bi.svg",
+        "skill_name": "Power BI"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/file-icons--flask.svg",
+        "skill_name": "Flask"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/simple-icons--spacy.svg",
+        "skill_name": "spaCy"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/file-icons--opencv.svg",
+        "skill_name": "OpenCV"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/devicon-plain--sqlalchemy-wordmark.svg",
+        "skill_name": "SQLAlchemy"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/mdi--api.svg",
+        "skill_name": "APIs"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/carbon--flow-data.svg",
+        "skill_name": "ETL"
+    },
+    {
+        "img_type": "icon",
+        "img_src": "bx bxl-javascript",
+        "skill_name": "JavaScript"
+    },
+    {
+        "img_type": "icon",
+        "img_src": "bx bxs-group",
+        "skill_name": "Trabalho em Equipe"
+    },
+    {
+        "img_type": "icon",
+        "img_src": "bx bx-target-lock",
+        "skill_name": "Proatividade"
+    },
+    {
+        "img_type": "icon",
+        "img_src": "bx bx-detail",
+        "skill_name": "Orientação a Detalhes"
+    },
+    {
+        "img_type": "icon",
+        "img_src": "bx bx-conversation",
+        "skill_name": "Comunicação"
+    }
+]
