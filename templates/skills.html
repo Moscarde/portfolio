@@ -1,156 +1,22 @@
 <section id="skills" class="mt-5 section-bg">
+
+
+
     <div class="container pb-5">
         <h2 class="pt-5 display-2">Skills</h2>
-
         <div class="skills-grid pt-3">
+            {% for skill in data_skills %}
             <div class="box" data-anime="down">
                 <div class="s-icons">
-                    <i class="bx bxl-python"></i>
+                    {% if skill.img_type == 'icon' %}
+                        <i class="{{ skill.img_src }}"></i>
+                    {% elif skill.img_type == 'img_link' %}
+                        <img src="{{ skill.img_src }}">
+                    {% endif %}
                 </div>
-                <h3>Python</h3>
+                <h3>{{ skill.skill_name }}</h3>
             </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/simple-icons--pandas.svg">
-                </div>
-                <h3>Pandas</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <i class="bx bx-data"></i>
-                </div>
-                <h3>SQL</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/simple-icons--polars.svg">
-                </div>
-                <h3>Polars</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/simple-icons--duckdb.svg">
-                </div>
-                <h3>DuckDB</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/simple-icons--selenium.svg">
-                </div>
-                <h3>Selenium</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/material-symbols-light--soup-kitchen-outline-rounded.svg">
-
-                </div>
-                <h3>BeautifulSoup</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/lineicons--mysql.svg">
-                </div>
-                <h3>MySQL</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/arcticons--microsoft-power-bi.svg">
-                </div>
-                <h3>Power BI</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/file-icons--flask.svg">
-
-                </div>
-                <h3>Flask</h3>
-            </div>
-
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/simple-icons--spacy.svg">
-
-                </div>
-                <h3>spaCy</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/file-icons--opencv.svg">
-
-                </div>
-                <h3>OpenCV</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/devicon-plain--sqlalchemy-wordmark.svg">
-
-                </div>
-                <h3>SQLAlchemy</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/mdi--api.svg">
-
-                </div>
-                <h3>APIs</h3>
-            </div>
-
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <img src="../static/img/icons/carbon--flow-data.svg">
-
-                </div>
-                <h3>ETL</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <i class="bx bxl-javascript"></i>
-                </div>
-                <h3>JavaScript</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <i class="bx bxs-group"></i>
-                </div>
-                <h3>Trabalho em Equipe</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <i class="bx bx-target-lock"></i>
-                </div>
-                <h3>Proatividade</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <i class="bx bx-detail"></i>
-                </div>
-                <h3>Orientação a Detalhes</h3>
-            </div>
-
-            <div class="box" data-anime="down">
-                <div class="s-icons">
-                    <i class="bx bx-conversation"></i>
-                </div>
-                <h3>Comunicação</h3>
-            </div>
+            {% endfor %}
         </div>
 
     </div>

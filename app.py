@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
 import os
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 
@@ -32,7 +33,15 @@ class Contato:
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    skills_file = os.path.join(app.root_path, 'content', 'skills.json')
+    
+    # Abrir e ler o arquivo skills.json
+    with open(skills_file, 'r') as f:
+        skills = json.load(f)
+
+    print(skills)
+
+    return render_template("index.html", data_skills=skills)
 
 
 @app.route("/send", methods=["GET", "POST"])
