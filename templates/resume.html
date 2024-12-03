@@ -5,104 +5,42 @@
         <div class="row">
             <div class="col-md-6">
                 <h3 class="cv-title" data-anime="down">Profissional</h3>
+                {% for experience in data_experiences %}
 
-                <div class="cv-item" data-anime="up">
-                    <h4>Engenheiro de Dados (Voluntário)</h4>
-                    <h5>JUN 2024 - ATUAL</h5>
-                    <p>
-                        <em>SouJunior (Remoto)</em>
-                    </p>
-                    <p>
-                        Conduzi um projeto comparativo entre diferentes engines de processamento de dados,
-                        incluindo Pandas, Polars e DuckDB, visando otimizar a performance de pipelines de ETL.
-                        Durante o projeto, participei da concepção e do desenvolvimento de uma solução voltada
-                        para tech recruiters, utilizando técnicas avançadas de processamento e armazenamento de
-                        dados, como indexação e Named Entity Recognition (NER). A solução incorporou tecnologias
-                        como spaCy e OpenCV para processamento de imagens e PDFs, além de técnicas de automação
-                        para otimização de workflows.
-                    </p>
-                    <p>
-                        <strong>Skills:</strong> Pandas, Polars, DuckDB, ETL, Otimização de Processos,
-                        SQLAlchemy, Flask, MySQL,
-                        SQLite, ngrok, spaCy, OpenCV, PDFPlumber
-                    </p>
-                </div>
+                    <div class="cv-item" data-anime="up">
+                        <h4>{{ experience.title }}</h4>
+                        <h5>{{ experience.date }}</h5>
+                        <p>
+                            <em>{{ experience.local }}</em>
+                        </p>
+                        <p>
+                            {{ experience.description }}
+                        </p>
+                        <p>
+                            <strong>Skills:</strong> {{ experience.skills }}
+                        </p>
+                    </div>
+                {% endfor %}
 
-                <div class="cv-item" data-anime="up">
-                    <h4>Analista de Dados (Voluntário)</h4>
-                    <h5>JUN 2023 - DEZ 2024</h5>
-                    <p>
-                        <em>SouJunior (Remoto)</em>
-                    </p>
-                    <p>
-                        Participei ativamente da criação e apresentação de um Dashboard de Redes Sociais em
-                        Power BI durante a live de celebração dos 2 anos da SouJunior. Através dessa
-                        experiência, refinei minhas habilidades de storytelling e comunicação de dados,
-                        apresentando resultados de maneira clara e impactante. Colaborei na extração de dados e
-                        desenvolvimento do dashboard, desde a coleta até a implementação, utilizando PowerQuery
-                        para transformar os dados. Além disso, desenvolvi um script em Python com Selenium para
-                        automatizar a extração de dados de redes sociais, melhorando a precisão e eficiência do
-                        processo.
-                    </p>
-                    <p>
-                        <strong>Skills:</strong> Power BI, PowerQuery, Apresentação de Dados, Storytelling,
-                        Figma, Visualização
-                        de Dados, Python, Pandas, Selenium, Automação de Dados, Web Scraping
-                    </p>
-                </div>
-                <div class="cv-item" data-anime="up">
-                    <h4>Vendedor e Coordenador de Produção</h4>
-                    <h5>2017 - DEZ 2024</h5>
-                    <p>
-                        <em>MM Paletes</em>
-                    </p>
-                    <p>
-                        Liderando a criação da linha de móveis mais vendida da empresa, fui responsável por
-                        todos os aspectos, desde a concepção inicial até o produto final. Essa experiência me
-                        permitiu desenvolver habilidades de gestão de produto e coordenar equipes de produção,
-                        assegurando que os processos fossem eficientes e os padrões de qualidade atendidos.
-                        Através da implementação de melhorias no controle de estoque e na logística de entregas,
-                        fui capaz de reduzir custos operacionais e aumentar a satisfação dos clientes, gerando
-                        uma produção mais ágil e eficaz.
-                    </p>
-                    <p>
-                        <strong>Skills:</strong> Gestão de Produto, Coordenação de Produção, Controle de
-                        Estoque, Logística,
-                        Redução de Custos, Melhoria de Processos
-                    </p>
-                </div>
             </div>
             <div class="col-md-6">
                 <h3 class="cv-title" data-anime="down">Educação</h3>
-                <div class="cv-item" data-anime="up">
-                    <h4>Médio Técnico</h4>
-                    <h5>2012 - 2015</h5>
-                    <p>
-                        <em>Escola Santa Bárbara</em>
-                    </p>
-                    <p>
-                        Recebi conceitos e técnicas de informática e teoria de sistemas para contribuir na
-                        solução de problemas utilizando tecnologias como HTML, CSS, JavaScript, AutoCad,
-                        Photoshop, Delphi e SQL.
-                    </p>
-                </div>
-
-                <div class="cv-item" data-anime="up">
-                    <h4>Analise e Desenvolvimento de Sistemas</h4>
-                    <h5>2022 - Em curso</h5>
-                    <p>
-                        <em>Anhanguera</em>
-                    </p>
-                    <p>
-                        Atualmente, estou me aprofundando no estudo de arquitetura de software, linguagens de
-                        programação como Java, Python e C#, além de metodologias ágeis e bancos de dados
-                        relacionais e não relacionais. O curso oferece uma base sólida para o desenvolvimento de
-                        soluções tecnológicas, abordando desde a análise de requisitos até a implementação e
-                        manutenção de sistemas complexos. Estou desenvolvendo habilidades em frameworks
-                        modernos, integração de sistemas e segurança da informação, com foco em otimizar
-                        processos e criar soluções eficientes para o mercado.
-                    </p>
-                </div>
+                {% for education in data_educations %}
+                    <div class="cv-item" data-anime="up">
+                        <h4>{{ education.title }}</h4>
+                        <h5>{{ education.date }}</h5>
+                        <p>
+                            <em>{{ education.local }}</em>
+                        </p>
+                        <p>
+                            {{ education.description }}
+                        </p>
+                        <p>
+                            <strong>Skills:</strong> {{ education.skills }}
+                        </p>
+                    </div>
+                {% endfor %}
+                
             </div>
 
         </div>
