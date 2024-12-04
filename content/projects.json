@@ -1,0 +1,32 @@
+[
+    {
+        "image": "https://github.com/Moscarde/data-engines-benchmark/raw/main/images/header.png",
+        "title": "Data Engines Benchmark",
+        "description": "Estudo comparativo entre engines de processamento de dados em um projeto real.",
+        "url": "https://github.com/Moscarde/data-engines-benchmark"
+    },
+    {
+        "image": "https://github.com/Moscarde/PythonPostMaker/raw/main/screenshots/anon_false.png",
+        "title": "Python Post Maker",
+        "description": "Projeto para automatizar a criação de postagens no Instagram coletando data de posts no Linkedin.",
+        "url": "https://github.com/Moscarde/PythonPostMaker"
+    },
+    {
+        "image": "https://github.com/Moscarde/perfect_resume_finder/raw/main/screenshots/screenshot_home.png",
+        "title": "Perfect Resume Finder (Em desenvolvimento)",
+        "description": "Aplicação com interface para gerenciar um banco de dados de curriculos assim como facilitar o uso dos recruiters.",
+        "url": "https://github.com/Moscarde/perfect_resume_finder"
+    },
+    {
+        "image": "https://user-images.githubusercontent.com/98126579/197552268-8e7a4aea-5790-4cfb-b649-141c08037e32.jpg",
+        "title": "SouJunior Data Plataform (Em desenvolvimento)",
+        "description": "Este projeto tem como objetivo gerenciar múltiplos pipelines de dados que irão alimentar uma plataforma de dados com arquitetura medalion (stage, raw e clean).",
+        "url": "https://github.com/Moscarde/Ilimidados-Platform"
+    },
+    {
+        "image": "../static/img/junior zone.jpg",
+        "title": "Junior Zone",
+        "description": "Junior Zone é um projeto para ajudar desenvolvedores e analistas iniciantes a encontrarem com facilidade boas oportunidades de vagas de emprego.",
+        "url": "https://github.com/Moscarde/Junior_Zone"
+    }
+]

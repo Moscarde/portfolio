@@ -1,7 +1,9 @@
-from flask import Flask, render_template, redirect, request, flash
-from flask_mail import Mail, Message
+import json
 import os
+
 from dotenv import load_dotenv
+from flask import Flask, flash, redirect, render_template, request
+from flask_mail import Mail, Message
 
 load_dotenv()
 
@@ -32,12 +34,41 @@ class Contato:
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    skills_file = os.path.join(app.root_path, "content", "skills.json")
+    articles_file = os.path.join(app.root_path, "content", "articles.json")
+    education_file = os.path.join(app.root_path, "content", "education.json")
+    experiences_file = os.path.join(app.root_path, "content", "experiences.json")
+    projects_file = os.path.join(app.root_path, "content", "projects.json")
+
+    # Abrir e ler o arquivo skills.json
+    with open(skills_file, "r") as f:
+        skills = json.load(f)
+
+    with open(articles_file, "r") as f:
+        articles = json.load(f)
+
+    with open(education_file, "r") as f:
+        educations = json.load(f)
+
+    with open(experiences_file, "r") as f:
+        experiences = json.load(f)
+
+    with open(projects_file, "r") as f:
+        projects = json.load(f)
+
+    return render_template(
+        "index.html",
+        data_skills=skills,
+        data_articles=articles,
+        data_educations=educations,
+        data_experiences=experiences,
+        data_projects=projects,
+    )
 
 
 @app.route("/send", methods=["GET", "POST"])
 def send():
-    print('----------------', request.method)
+    print("----------------", request.method)
     if request.method == "POST":
         formContato = Contato(
             request.form["nome"], request.form["email"], request.form["mensagem"]
@@ -60,4 +91,4 @@ Mensagem: {formContato.mensagem}
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5001, debug=True)

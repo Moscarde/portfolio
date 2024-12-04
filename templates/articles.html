@@ -1,0 +1,54 @@
+<section id="articles" class="section-bg pb-5">
+    <div class="container pb-5 pt-5" data-anime="up">
+        <h2 class="display-2">Últimos Artigos</h2>
+
+        <div id="carrouselArticles" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                {% for i in range(0, data_articles|length, 3) %}
+                <button type="button" data-bs-target="#carrouselArticles" data-bs-slide-to="{{ loop.index0 }}"
+                    class="{{ 'active' if loop.index == 1 else '' }}" aria-label="Slide {{ loop.index }}"></button>
+                {% endfor %}
+            </div>
+
+            <div class="carousel-inner">
+                {% for i in range(0, data_articles|length, 3) %}
+                <div class="carousel-item {{ 'active' if loop.index == 1 else '' }}" data-bs-interval="6500">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        {% for article in data_articles[i:i+3] %}
+                        <div class="col">
+                            <div class="card">
+                                <a href="{{ article.url }}" target="_blank"><img src="{{ article.image }}"
+                                        class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <div class="card-body-content">
+                                        <h5 class="card-title">{{ article.title }}</h5>
+                                        <p class="card-text">{{ article.description }}</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ article.url }}" class="btn btn-outline-dark" target="_blank">
+                                            <i class="bi bi-medium"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrouselArticles"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrouselArticles"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,23 @@
+<section id="skills" class="mt-5 section-bg">
+
+
+
+    <div class="container pb-5">
+        <h2 class="pt-5 display-2">Skills</h2>
+        <div class="skills-grid pt-3">
+            {% for skill in data_skills %}
+            <div class="box" data-anime="down">
+                <div class="s-icons">
+                    {% if skill.img_type == 'icon' %}
+                        <i class="{{ skill.img_src }}"></i>
+                    {% elif skill.img_type == 'img_link' %}
+                        <img src="{{ skill.img_src }}">
+                    {% endif %}
+                </div>
+                <h3>{{ skill.skill_name }}</h3>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

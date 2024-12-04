@@ -1,0 +1,53 @@
+<section id="projects" class="mt-5 section-bg">
+    <div class="container pb-5 pt-5" data-anime="up">
+        <h2 class="display-2">Últimos Projetos</h2>
+
+        <div id="carrouselProjects" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                {% for i in range(0, data_projects|length, 3) %}
+                <button type="button" data-bs-target="#carrouselProjects" data-bs-slide-to="{{ loop.index0 }}"
+                    class="{{ 'active' if loop.index == 1 else '' }}" aria-label="Slide {{ loop.index }}"></button>
+                {% endfor %}
+            </div>
+
+            <div class="carousel-inner">
+                {% for i in range(0, data_projects|length, 3) %}
+                <div class="carousel-item {{ 'active' if loop.index == 1 else '' }}" data-bs-interval="5000">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        {% for project in data_projects[i:i+3] %}
+                        <div class="col">
+                            <div class="card">
+                                <a href="{{ project.url }}" target="_blank"><img src="{{ project.image }}"
+                                        class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <div class="card-body-content">
+                                        <h5 class="card-title">{{ project.title }}</h5>
+                                        <p class="card-text">{{ project.description }}</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ project.url }}" class="btn btn-outline-dark" target="_blank">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrouselProjects"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrouselProjects"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>

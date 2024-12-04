@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Médio Técnico",
+        "local": "Escola Santa Bárbara",
+        "date": "2012 - 2015",
+        "description": "Recebi conceitos e técnicas de informática e teoria de sistemas para contribuir na solução de problemas utilizando tecnologias como HTML, CSS, JavaScript, AutoCad, Photoshop, Delphi e SQL.",
+        "skills": "HTML, CSS, JavaScript, AutoCad, Photoshop, Delphi, SQL, Montagem e Manutenção de Computadores, Redes e Eletrônica"  
+    },
+    {
+        "title": "Analise e Desenvolvimento de Sistemas",
+        "local": "Anhanguera",
+        "date": "2022 - EM CURSO",
+        "description": "Atualmente, estou me aprofundando no estudo de arquitetura de software, linguagens de programação como Java, Python e C#, além de metodologias ágeis e bancos de dados relacionais e não relacionais. O curso oferece uma base sólida para o desenvolvimento de soluções tecnológicas, abordando desde a análise de requisitos até a implementação e manutenção de sistemas complexos. Estou desenvolvendo habilidades em frameworks modernos, integração de sistemas e segurança da informação, com foco em otimizar processos e criar soluções eficientes para o mercado.",
+        "skills": "Arquitetura de Software, Java, Python, C#, Metodologias Ágeis, Bancos de Dados Relacionais e Não Relacionais, Frameworks Modernos, Integração de Sistemas, Segurança da Informação"
+    }
+]

@@ -1,0 +1,77 @@
+/* Animations */
+[data-anime] {
+    opacity: 0;
+    transition: opacity 1s, transform 1s ease-out; /* Ajuste para um easing mais suave */
+}
+
+[data-anime="down"] {
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-anime="up"] {
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* Animação de flutuação e rotação para o ícone de café */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translateY(-5px) rotate(3deg);
+    }
+
+    40% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    60% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+
+    80% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* Animação de flutuação e rotação para o fundo */
+@keyframes float-background {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    25% {
+        transform: translateY(-15px) translateX(-5px);
+    }
+
+    50% {
+        transform: translateY(2px) translateX(5px);
+    }
+
+    75% {
+        transform: translateY(-6px) translateX(-7px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
