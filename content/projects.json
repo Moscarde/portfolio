@@ -6,16 +6,22 @@
         "url": "https://github.com/Moscarde/data-engines-benchmark"
     },
     {
-        "image": "https://github.com/Moscarde/PythonPostMaker/raw/main/screenshots/anon_false.png",
-        "title": "Python Post Maker",
-        "description": "Projeto para automatizar a criação de postagens no Instagram coletando data de posts no Linkedin.",
-        "url": "https://github.com/Moscarde/PythonPostMaker"
-    },
-    {
         "image": "https://github.com/Moscarde/perfect_resume_finder/raw/main/screenshots/screenshot_home.png",
         "title": "Perfect Resume Finder (Em desenvolvimento)",
         "description": "Aplicação com interface para gerenciar um banco de dados de curriculos assim como facilitar o uso dos recruiters.",
         "url": "https://github.com/Moscarde/perfect_resume_finder"
+    },
+    {
+        "image": "https://github.com/Moscarde/emd-desafio-junior-data-scientist/raw/main/screenshots/dashboard_overview.png",
+        "title": "Teste Técnico Escritório dos Dados - Prefeitura do Rio de Janeiro",
+        "description": "Projeto realizado para um teste técnico, contém soluções incluindo SQL, BigQuery, Python e Power BI.",
+        "url": "https://github.com/Moscarde/emd-desafio-junior-data-scientist"
+    },
+    {
+        "image": "https://github.com/Moscarde/portfolio/raw/main/screenshots/header.png",
+        "title": "Portfólio Pessoal",
+        "description": "Projeto de uma página web desenvolvinda com Flask e Bootstrap para criar um portfólio pessoal, visando a praticidade de gerenciamento de conteúdos.",
+        "url": "https://github.com/Moscarde/portfolio"
     },
     {
         "image": "https://user-images.githubusercontent.com/98126579/197552268-8e7a4aea-5790-4cfb-b649-141c08037e32.jpg",
@@ -28,5 +34,11 @@
         "title": "Junior Zone",
         "description": "Junior Zone é um projeto para ajudar desenvolvedores e analistas iniciantes a encontrarem com facilidade boas oportunidades de vagas de emprego.",
         "url": "https://github.com/Moscarde/Junior_Zone"
+    },
+    {
+        "image": "https://github.com/Moscarde/PythonPostMaker/raw/main/screenshots/anon_false.png",
+        "title": "Python Post Maker",
+        "description": "Projeto para automatizar a criação de postagens no Instagram coletando data de posts no Linkedin.",
+        "url": "https://github.com/Moscarde/PythonPostMaker"
     }
 ]
