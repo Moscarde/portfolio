@@ -1,6 +1,5 @@
 import json
 import os
-
 from dotenv import load_dotenv
 from flask import Flask, flash, redirect, render_template, request
 from flask_mail import Mail, Message
@@ -68,7 +67,6 @@ def index():
 
 @app.route("/send", methods=["GET", "POST"])
 def send():
-    print("----------------", request.method)
     if request.method == "POST":
         formContato = Contato(
             request.form["nome"], request.form["email"], request.form["mensagem"]
