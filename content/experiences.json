@@ -1,5 +1,19 @@
 [
     {
+        "title": "Engenheiro de Dados",
+        "local": "Secretaria Municipal de Saúde do RJ (Híbrido)",
+        "date": "SET 2025 - ATUAL",
+        "description": "Liderei a modernização da arquitetura de dados e a implementação da cultura de dados On-Premise. Arquitetei a estrutura no padrão Medalhão (Raw/Silver/Gold) com linhagem automatizada. Refatorei motores de coleta de dados, migrando de Selenium para APIs, o que reduziu o consumo de hardware em 90% e escalou a operação de 5 para 36 unidades de saúde simultâneas. Gerencio pipelines de alta frequência (15 min) via Airbyte e orquestração complexa com Apache Airflow para garantir integridade e observabilidade de dados sensíveis.",
+        "skills": "Apache Airflow, Airbyte, Arquitetura Medalhão, Python (APIs), Docker, PostgreSQL, Data Quality, Reverse ETL, Looker Studio"
+    },
+    {
+        "title": "Desenvolvedor Python",
+        "local": "Secretaria Municipal de Saúde do RJ (Híbrido)",
+        "date": "FEV 2025 - SET 2025",
+        "description": "Desenvolvi rotinas de sincronização entre bancos heterogêneos utilizando Python e SQLAlchemy, automatizando o fluxo de Reverse ETL para bases operacionais. Construí APIs robustas via Django REST Framework para integração de serviços e democratização do acesso interno aos dados. Implementei automações de Web Scraping para captura de fontes externas, garantindo o tratamento seguro de dados sensíveis em conformidade com as necessidades da secretaria.",
+        "skills": "Python, Django REST Framework (DRF), SQLAlchemy, PostgreSQL, Selenium, Git, Web Scraping, Integração de Dados"
+    },
+    {
         "title": "Engenheiro de Dados (Voluntário)",
         "local": "SouJunior (Remoto)",
         "date": "JUN 2024 - ATUAL",
