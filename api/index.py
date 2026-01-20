@@ -9,8 +9,8 @@ load_dotenv()
 current_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.dirname(current_dir)
 app = Flask(__name__, 
-            template_folder=os.path.join(root_dir, 'templates'), 
-            static_folder=os.path.join(root_dir, 'static'))
+            template_folder='../templates', 
+            static_folder='../static')
 app.secret_key = "secret"
 
 
