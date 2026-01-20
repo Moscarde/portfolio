@@ -6,7 +6,9 @@ from flask_mail import Mail, Message
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, 
+            template_folder='../templates', 
+            static_folder='../static')
 app.secret_key = "secret"
 
 
@@ -33,11 +35,13 @@ class Contato:
 
 @app.route("/")
 def index():
-    skills_file = os.path.join(app.root_path, "content", "skills.json")
-    articles_file = os.path.join(app.root_path, "content", "articles.json")
-    education_file = os.path.join(app.root_path, "content", "education.json")
-    experiences_file = os.path.join(app.root_path, "content", "experiences.json")
-    projects_file = os.path.join(app.root_path, "content", "projects.json")
+    base_path = os.path.dirname(os.path.dirname(__file__))
+
+    skills_file = os.path.join(base_path, "content", "skills.json")
+    articles_file = os.path.join(base_path, "content", "articles.json")
+    education_file = os.path.join(base_path, "content", "education.json")
+    experiences_file = os.path.join(base_path, "content", "experiences.json")
+    projects_file = os.path.join(base_path, "content", "projects.json")
 
     # Abrir e ler o arquivo skills.json
     with open(skills_file, "r") as f:
