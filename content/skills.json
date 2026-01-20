@@ -6,6 +6,31 @@
     },
     {
         "img_type": "img_link",
+        "img_src": "../static/img/icons/apacheairflow.svg",
+        "skill_name": "Apache Airflow"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/airbyte.svg",
+        "skill_name": "Airbyte"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/postgresql.svg",
+        "skill_name": "PostgreSQL"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/looker.svg",
+        "skill_name": "Looker Studio"
+    },
+    {
+        "img_type": "img_link",
+        "img_src": "../static/img/icons/docker.svg",
+        "skill_name": "Docker"
+    },
+    {
+        "img_type": "img_link",
         "img_src": "../static/img/icons/simple-icons--pandas.svg",
         "skill_name": "Pandas"
     },
