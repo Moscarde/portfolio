@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/animations.css">
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animations.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
@@ -20,7 +20,7 @@
 
     <aside id="header">
         <section class="profile pt-5">
-            <img src="../static/img/perfil-photo.jpeg" alt="Foto de perfil">
+            <img src="{{ url_for('static', filename='img/perfil-photo.jpeg') }}" alt="Foto de perfil">
             <h1>Gabriel Moscarde</h1>
             <div class="social-links mt-4 text-center">
                 <a target="_blank" href="https://www.linkedin.com/in/moscarde"><i class="bi bi-linkedin"></i></a>
@@ -95,8 +95,8 @@
         </div>
     </footer>
 
-    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../static/script.js"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4N6GTR9G4"></script>
