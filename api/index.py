@@ -35,39 +35,21 @@ class Contato:
         self.mensagem = mensagem
 
 
+def load_content(name):
+    with open(os.path.join(root_dir, "content", f"{name}.json"), encoding="utf-8") as f:
+        return json.load(f)
+
+
 @app.route("/")
 def index():
-    base_path = os.path.dirname(os.path.dirname(__file__))
-
-    skills_file = os.path.join(base_path, "content", "skills.json")
-    articles_file = os.path.join(base_path, "content", "articles.json")
-    education_file = os.path.join(base_path, "content", "education.json")
-    experiences_file = os.path.join(base_path, "content", "experiences.json")
-    projects_file = os.path.join(base_path, "content", "projects.json")
-
-    # Abrir e ler o arquivo skills.json
-    with open(skills_file, "r") as f:
-        skills = json.load(f)
-
-    with open(articles_file, "r") as f:
-        articles = json.load(f)
-
-    with open(education_file, "r") as f:
-        educations = json.load(f)
-
-    with open(experiences_file, "r") as f:
-        experiences = json.load(f)
-
-    with open(projects_file, "r") as f:
-        projects = json.load(f)
-
     return render_template(
         "index.html",
-        data_skills=skills,
-        data_articles=articles,
-        data_educations=educations,
-        data_experiences=experiences,
-        data_projects=projects,
+        profile=load_content("profile"),
+        data_skills=load_content("skills"),
+        data_articles=load_content("articles"),
+        data_educations=load_content("education"),
+        data_experiences=load_content("experiences"),
+        data_projects=load_content("projects"),
     )
 
 

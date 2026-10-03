@@ -1,37 +1,96 @@
 [
     {
         "title": "Engenheiro de Dados",
-        "local": "Secretaria Municipal de Saúde do RJ (Híbrido)",
-        "date": "SET 2025 - ATUAL",
-        "description": "Liderei a modernização da arquitetura de dados e a implementação da cultura de dados On-Premise. Arquitetei a estrutura no padrão Medalhão (Raw/Silver/Gold) com linhagem automatizada. Refatorei motores de coleta de dados, migrando de Selenium para APIs, o que reduziu o consumo de hardware em 90% e escalou a operação de 5 para 36 unidades de saúde simultâneas. Gerencio pipelines de alta frequência (15 min) via Airbyte e orquestração complexa com Apache Airflow para garantir integridade e observabilidade de dados sensíveis.",
-        "skills": "Apache Airflow, Airbyte, Arquitetura Medalhão, Python (APIs), Docker, PostgreSQL, Data Quality, Reverse ETL, Looker Studio"
+        "local": "Secretaria Municipal de Saúde do Rio de Janeiro · híbrido",
+        "date": "set 2025 – atual",
+        "bullets": [
+            "Pipelines de dados hospitalares (internações, altas, leitos, cirurgias) orquestrados no Airflow, com validações de qualidade e modelagem em camadas no dbt.",
+            "Reestruturei a captura legada de dados: cerca de 90% menos hardware e de 5 para 36 unidades processadas em paralelo.",
+            "Sincronizações ETL/ELT e Reverse ETL com Airbyte, em infraestrutura Docker on-premise.",
+            "Principal desenvolvedor do Portal DIID, plataforma interna de dados e aplicações da divisão."
+        ],
+        "skills": [
+            "Airflow",
+            "dbt",
+            "Airbyte",
+            "PostgreSQL",
+            "Docker",
+            "Django"
+        ]
     },
     {
         "title": "Desenvolvedor Python",
-        "local": "Secretaria Municipal de Saúde do RJ (Híbrido)",
-        "date": "FEV 2025 - SET 2025",
-        "description": "Desenvolvi rotinas de sincronização entre bancos heterogêneos utilizando Python e SQLAlchemy, automatizando o fluxo de Reverse ETL para bases operacionais. Construí APIs robustas via Django REST Framework para integração de serviços e democratização do acesso interno aos dados. Implementei automações de Web Scraping para captura de fontes externas, garantindo o tratamento seguro de dados sensíveis em conformidade com as necessidades da secretaria.",
-        "skills": "Python, Django REST Framework (DRF), SQLAlchemy, PostgreSQL, Selenium, Git, Web Scraping, Integração de Dados"
+        "local": "Secretaria Municipal de Saúde do Rio de Janeiro · híbrido",
+        "date": "fev 2025 – set 2025",
+        "bullets": [
+            "Integração e sincronização entre bancos heterogêneos com Python, SQL e SQLAlchemy.",
+            "APIs e módulos internos com Django e Django REST Framework.",
+            "Coletores com Selenium, Requests e APIs no lugar de tarefas manuais, e Reverse ETL de volta aos sistemas operacionais."
+        ],
+        "skills": [
+            "Python",
+            "Django",
+            "DRF",
+            "SQLAlchemy",
+            "Selenium"
+        ]
     },
     {
-        "title": "Engenheiro de Dados (Voluntário)",
-        "local": "SouJunior (Remoto)",
-        "date": "JUN 2024 - ATUAL",
-        "description": "Conduzi um projeto comparativo entre diferentes engines de processamento de dados, incluindo Pandas, Polars e DuckDB, visando otimizar a performance de pipelines de ETL. Durante o projeto, participei da concepção e do desenvolvimento de uma solução voltada para tech recruiters, utilizando técnicas avançadas de processamento e armazenamento de dados, como indexação e Named Entity Recognition (NER). A solução incorporou tecnologias como spaCy e OpenCV para processamento de imagens e PDFs, além de técnicas de automação para otimização de workflows.",
-        "skills": "Pandas, Polars, DuckDB, ETL, Otimização de Processos, SQLAlchemy, Flask, MySQL, SQLite, ngrok, spaCy, OpenCV, PDFPlumber"
+        "title": "Engenheiro de Dados (voluntário)",
+        "local": "SouJunior · remoto",
+        "date": "jul 2024 – mar 2025",
+        "bullets": [
+            "Benchmark de pandas, Polars e DuckDB no ETL da comunidade, que virou artigo.",
+            "MVP de aplicação para tech recruiters, da ideia aos testes de ferramentas (spaCy, OpenCV, PDFPlumber)."
+        ],
+        "skills": [
+            "Polars",
+            "DuckDB",
+            "Flask",
+            "spaCy"
+        ]
     },
     {
-        "title": "Analista de Dados (Voluntário)",
-        "local": "SouJunior (Remoto)",
-        "date": "JUN 2023 - DEZ 2024",
-        "description": "Participei ativamente da criação e apresentação de um Dashboard de Redes Sociais em Power BI durante a live de celebração dos 2 anos da SouJunior. Através dessa experiência, refinei minhas habilidades de storytelling e comunicação de dados, apresentando resultados de maneira clara e impactante. Colaborei na extração de dados e desenvolvimento do dashboard, desde a coleta até a implementação, utilizando PowerQuery para transformar os dados. Além disso, desenvolvi um script em Python com Selenium para automatizar a extração de dados de redes sociais, melhorando a precisão e eficiência do processo.",
-        "skills": "Power BI, PowerQuery, Apresentação de Dados, Storytelling, Figma, Visualização de Dados, Python, Pandas, Selenium, Automação de Dados, Web Scraping"
+        "title": "Analista de Dados (voluntário)",
+        "local": "SouJunior · remoto",
+        "date": "nov 2023 – jul 2024",
+        "bullets": [
+            "Dashboard de redes sociais em Power BI, da extração ao visual desenhado no Figma.",
+            "Co-apresentei o projeto na live de 2 anos da SouJunior.",
+            "Automação da coleta de dados de redes sociais com Python e Selenium."
+        ],
+        "skills": [
+            "Power BI",
+            "PowerQuery",
+            "Selenium",
+            "Figma"
+        ]
+    },
+    {
+        "title": "Estrategista digital",
+        "local": "Lateralus Tattoo Studio · Rio de Janeiro",
+        "date": "set 2022 – jan 2023",
+        "bullets": [
+            "Posicionamento digital, campanhas de anúncios e produção de foto e vídeo para redes sociais."
+        ],
+        "skills": [
+            "Photoshop",
+            "Premiere",
+            "After Effects"
+        ]
     },
     {
         "title": "Vendedor e Coordenador de Produção",
-        "local": "MM Paletes",
-        "date": "2017 - DEZ 2024",
-        "description": "Liderando a criação da linha de móveis mais vendida da empresa, fui responsável por todos os aspectos, desde a concepção inicial até o produto final. Essa experiência me permitiu desenvolver habilidades de gestão de produto e coordenar equipes de produção, assegurando que os processos fossem eficientes e os padrões de qualidade atendidos. Através da implementação de melhorias no controle de estoque e na logística de entregas, fui capaz de reduzir custos operacionais e aumentar a satisfação dos clientes, gerando uma produção mais ágil e eficaz.",
-        "skills": "Gestão de Produto, Coordenação de Produção, Controle de Estoque, Logística, Redução de Custos, Melhoria de Processos"
+        "local": "MM Paletes · Rio de Janeiro",
+        "date": "dez 2017 – jan 2025",
+        "bullets": [
+            "Criei e estruturei a linha de móveis mais vendida da empresa, da definição dos produtos ao processo produtivo.",
+            "Coordenação de equipe, estoque, prazos e logística de entregas."
+        ],
+        "skills": [
+            "Gestão de produto",
+            "Processos",
+            "Vendas"
+        ]
     }
 ]

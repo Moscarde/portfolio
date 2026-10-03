@@ -1,66 +1,45 @@
-<section id="contact" class="pt-5 pb-5">
-    <div class="container mb-5">
-        <h2 class="pt-3 pb-3">Contato</h2>
-
-        <div class="row">
-            <!-- mapa -->
-            <div class="col-md-5" data-anime="left">
-                <div class="card p-5 shadow border-0">
-                    <div class="endereco">
-                        <h4><i class="bi bi-geo-alt"></i> Localização</h4>
-                        <p>Rio de Janeiro - RJ</p>
-                    </div>
-
-                    <div class="email">
-                        <h4><i class="bi bi-envelope"></i> E-mail</h4>
-                        <p>gabrielmoscarde@outlook.com</p>
-                    </div>
-
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235198.68142636976!2d-43.44598205!3d-22.91413075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1704680530424!5m2!1spt-BR!2sbr"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+<section id="contact" class="container section">
+    <h2 class="section-title" data-anime="up">Contato</h2>
+    <div class="contact">
+        <div class="card contact-info" data-anime="up">
+            <div>
+                <p class="mono label">LOCALIZAÇÃO</p>
+                <p class="value">{{ profile.location }}</p>
+            </div>
+            <div>
+                <p class="mono label">E-MAIL</p>
+                <a class="value" href="mailto:{{ profile.email }}">{{ profile.email }}</a>
+            </div>
+            <div>
+                <p class="mono label">REDES</p>
+                <div class="contact-links">
+                    {% for social in profile.social %}
+                    <a href="{{ social.url }}" target="_blank" rel="noopener">{{ social.label }}</a>
+                    {% endfor %}
                 </div>
             </div>
-
-            <!-- formulario -->
-            <div class="col-md-7 mt-5 mt-md-0" data-anime="right">
-                <div class="card p-5 w-100 shadow border-0">
-
-                    <form class="row g-3" action="/send" method="POST">
-                        <div class="col-md-6">
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" name="nome"
-                                placeholder="Digite seu nome..." required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Digite seu email..." required>
-                        </div>
-                        <div class="col-12">
-                            <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea type="text" class="form-control" id="mensagem" name="mensagem"
-                                placeholder="Digite sua mensage..." rows="9" required></textarea>
-                        </div>
-
-
-                        <div class="col-12 d-flex justify-content-center mt-5">
-                            <button id="btn-send" type="submit" class="btn btn-primary">Enviar mensagem</button>
-
-                            <button id="btn-send-spinner" class="btn btn-primary" type="button" disabled>
-                                <span class="spinner-grow spinner-grow-sm" role="status"
-                                    aria-hidden="true"></span>
-                                Enviando...
-                            </button>
-                        </div>
-
-
-                    </form>
-                </div>
-            </div>
-
         </div>
+
+        <form class="card contact-form" action="/send" method="POST" data-anime="up">
+            <div class="form-field">
+                <label for="nome">Nome</label>
+                <input class="field" type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-field">
+                <label for="email">E-mail</label>
+                <input class="field" type="email" id="email" name="email" placeholder="voce@email.com" required>
+            </div>
+            <div class="form-field form-full">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="field" id="mensagem" name="mensagem" rows="6"
+                    placeholder="Conte um pouco sobre o projeto ou a vaga" required></textarea>
+            </div>
+            <div class="form-full">
+                <button id="btn-send" type="submit" class="btn btn-primary">Enviar mensagem</button>
+                <button id="btn-send-spinner" class="btn btn-primary" type="button" disabled>
+                    <span class="spinner" aria-hidden="true"></span> Enviando...
+                </button>
+            </div>
+        </form>
     </div>
 </section>

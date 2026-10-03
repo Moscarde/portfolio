@@ -1,49 +1,35 @@
-<section id="resume" class="mt-5 cv">
-    <div class="container pb-5">
-        <h2 class="display-2" data-anime="down">Currículo</h2>
-
-        <div class="row">
-            <div class="col-md-6">
-                <h3 class="cv-title" data-anime="down">Profissional</h3>
-                {% for experience in data_experiences %}
-
-                    <div class="cv-item" data-anime="up">
-                        <h4>{{ experience.title }}</h4>
-                        <h5>{{ experience.date }}</h5>
-                        <p>
-                            <em>{{ experience.local }}</em>
-                        </p>
-                        <p>
-                            {{ experience.description }}
-                        </p>
-                        <p>
-                            <strong>Skills:</strong> {{ experience.skills }}
-                        </p>
-                    </div>
-                {% endfor %}
-
+<section id="resume" class="container section">
+    <h2 class="section-title" data-anime="up">Experiência</h2>
+    <div class="split">
+        <div class="timeline">
+            {% for experience in data_experiences %}
+            <div class="cv-item" data-anime="up">
+                <p class="mono cv-date">{{ experience.date }}</p>
+                <h3>{{ experience.title }}</h3>
+                <p class="cv-local">{{ experience.local }}</p>
+                <ul class="cv-bullets">
+                    {% for bullet in experience.bullets %}
+                    <li>{{ bullet }}</li>
+                    {% endfor %}
+                </ul>
+                <ul class="chips">
+                    {% for skill in experience.skills %}
+                    <li class="chip chip-sm mono">{{ skill }}</li>
+                    {% endfor %}
+                </ul>
             </div>
-            <div class="col-md-6">
-                <h3 class="cv-title" data-anime="down">Educação</h3>
-                {% for education in data_educations %}
-                    <div class="cv-item" data-anime="up">
-                        <h4>{{ education.title }}</h4>
-                        <h5>{{ education.date }}</h5>
-                        <p>
-                            <em>{{ education.local }}</em>
-                        </p>
-                        <p>
-                            {{ education.description }}
-                        </p>
-                        <p>
-                            <strong>Skills:</strong> {{ education.skills }}
-                        </p>
-                    </div>
-                {% endfor %}
-                
-            </div>
-
+            {% endfor %}
         </div>
 
+        <div class="side">
+            <h3 class="side-title">Formação</h3>
+            {% for education in data_educations %}
+            <div class="card edu" data-anime="up">
+                <p class="mono cv-date">{{ education.date }}</p>
+                <p class="edu-title">{{ education.title }}</p>
+                <p class="cv-local">{{ education.local }}</p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>

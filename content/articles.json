@@ -1,38 +1,62 @@
 [
     {
-        "image": "../static/img/folium.jpg",
-        "title": "Folium: Criando mapas interativos com dados reais de forma simples",
-        "description": "Exploração de funcionalidades da biblioteca folium.",
-        "url": "https://moscarde.medium.com/folium-criando-mapas-interativos-com-dados-reais-de-forma-simples-c20ab89b5c79"
+        "date": "abr 2026",
+        "where": "LinkedIn",
+        "title": "Gere um número aleatório entre 1 e 10! O que 128 mil respostas revelam sobre viés em LLMs",
+        "url": "https://www.linkedin.com/pulse/gere-um-n%C3%BAmero-aleat%C3%B3rio-entre-1-e-10-quando-llm-escolhe-moscarde-hsejf/"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*k2lKeIrfbF7nTjVgNt7sQg.jpeg",
-        "title": "Python e Cookies 🍪: Guia de Automação de Tarefas com Python e Selenium",
-        "description": "Fundamentos de automação web usando Python com Selenium e, algumas dicas que aprendi com o tempo.",
-        "url": "https://moscarde.medium.com/python-e-cookies-guia-de-automa%C3%A7%C3%A3o-de-tarefas-com-python-e-selenium-6b3d796e1c63"
+        "date": "fev 2026",
+        "where": "LinkedIn",
+        "title": "Do Caos da Replicação ao Template Único: uma engine de BI escalável com Django",
+        "url": "https://www.linkedin.com/pulse/do-caos-da-replica%C3%A7%C3%A3o-ao-template-%C3%BAnico-uma-engine-de-moscarde-lthrf/"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*izPID6yIiZtGRntNf96Tow.jpeg",
-        "title": "Explorando o SQLAlchemy: ORM e Operações CRUD com Python",
-        "description": "Exploração de funcionalidades de operações CRUD com a biblioteca SQLAlchemy",
-        "url": "https://moscarde.medium.com/explorando-o-sqlalchemy-orm-e-opera%C3%A7%C3%B5es-crud-com-python-da9914df0eaa"
+        "date": "abr 2025",
+        "where": "LinkedIn",
+        "title": "Abstração x Clareza: quando abstrair demais prejudica mais do que ajuda",
+        "url": "https://www.linkedin.com/pulse/gabriel-moscarde-kshuf/"
     },
     {
-        "image": "https://user-images.githubusercontent.com/98126579/197552268-8e7a4aea-5790-4cfb-b649-141c08037e32.jpg",
-        "title": "Otimizando Scripts em Python: Lições Aprendidas com Processamento Paralelo",
-        "description": "Analisando o desempenho de scripts em Python com e sem paralelismo.",
-        "url": "https://moscarde.medium.com/otimizando-scripts-em-python-li%C3%A7%C3%B5es-aprendidas-com-processamento-paralelo-7b8d3e17d659"
+        "date": "out 2024",
+        "where": "LinkedIn",
+        "title": "Web Scraping para análise esportiva: dados de futebol com Python, Selenium e BeautifulSoup",
+        "url": "https://www.linkedin.com/pulse/web-scraping-para-an%C3%A1lise-esportiva-coletando-dados-de-moscarde-ijnxf/"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*oLbI8ubtRpw7UDSzH4hLEA.png",
-        "title": "Benchmark Engines de Processamento de Dados — POLARS X PANDAS X DUCKDB",
-        "description": "Testes comparativos entre diferentes engines de processamento de dados para identificar a melhor opção para nossa pipeline de ETL.",
-        "url": "https://moscarde.medium.com/benchmark-engines-de-processamento-de-dados-polars-x-pandas-x-duckdb-3ae25a60f92c"
+        "date": "out 2024",
+        "where": "LinkedIn",
+        "title": "Python e Cookies: guia de automação de tarefas com Python e Selenium",
+        "url": "https://www.linkedin.com/pulse/python-e-cookies-guia-de-automa%C3%A7%C3%A3o-tarefas-com-gabriel-moscarde-j662f/"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*TCh7qNtdpvXwht_K2l0_WQ.jpeg",
-        "title": "Importação e tratamento de dados de multiplas planilhas Excel no Power BI",
-        "description": "Abordagens para importação e tratamento de dados de multiplas planilhas Excel no Power BI",
+        "date": "set 2024",
+        "where": "LinkedIn",
+        "title": "Explorando o SQLAlchemy: ORM e operações CRUD com Python",
+        "url": "https://www.linkedin.com/pulse/explorando-o-sqlalchemy-orm-e-opera%C3%A7%C3%B5es-crud-com-python-moscarde-utngf/"
+    },
+    {
+        "date": "ago 2024",
+        "where": "LinkedIn",
+        "title": "Otimizando scripts em Python: lições aprendidas com processamento paralelo",
+        "url": "https://www.linkedin.com/pulse/otimizando-scripts-em-python-li%C3%A7%C3%B5es-aprendidas-com-gabriel-moscarde-ptu2f/"
+    },
+    {
+        "date": "jul 2024",
+        "where": "LinkedIn",
+        "title": "Benchmark de engines de processamento de dados: Polars x Pandas x DuckDB",
+        "url": "https://www.linkedin.com/pulse/benchmark-engines-de-processamento-dados-polars-x-pandas-moscarde-q1srf/"
+    },
+    {
+        "date": "",
+        "where": "Medium",
+        "title": "Importação e tratamento de dados de múltiplas planilhas Excel no Power BI",
         "url": "https://moscarde.medium.com/importa%C3%A7%C3%A3o-e-tratamento-de-dados-de-multiplas-planilhas-excel-no-power-bi-5027b9e52afd"
+    },
+    {
+        "date": "",
+        "where": "Medium",
+        "title": "Folium: criando mapas interativos com dados reais de forma simples",
+        "url": "https://moscarde.medium.com/folium-criando-mapas-interativos-com-dados-reais-de-forma-simples-c20ab89b5c79"
     }
 ]

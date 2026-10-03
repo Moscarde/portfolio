@@ -6,7 +6,7 @@ Acesse a versão live [aqui!](https://web-production-efab.up.railway.app/)
 
 ## Sobre o Projeto
 
-Este repositório foi construído com **Flask** e **Bootstrap**, oferecendo uma estrutura prática e simples para criar e gerenciar um portfólio dinâmico.
+Este repositório foi construído com **Flask**, HTML e CSS puros, oferecendo uma estrutura prática e simples para criar e gerenciar um portfólio dinâmico.
 
 ## Gerenciamento Simples
 

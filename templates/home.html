@@ -1,25 +1,16 @@
-<section id="home" class="m-0 p-0">
-    <div class="row d-flex justify-content-center align-items-center w-100">
-        <div class="col-md-6 d-flex justify-content-center flex-column align-items-center">
-            <div>
-                <h2 class="text-white text-shadow">Gabriel Moscarde</h2>
-                <span id="subtitle" class="ps-1 text-white text-shadow">Engenheiro de Dados</span>
+<section id="home" class="hero">
+    <div class="container hero-main">
+        <div class="hero-text">
+            <h2>Gabriel<br>Moscarde</h2>
+            <p class="hero-role">{{ profile.role }} · {{ profile.location }}</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">Projetos</a>
+                <a class="btn btn-ghost" href="#contact">Contato</a>
             </div>
         </div>
-        <div class="col-md-3 d-flex justify-content-center align-items-center">
-            <div class="coffee">
-                <div class="coffee-background"></div>
-                <div class="coffee-icon-wrapper">
-                    <img id="coffee-icon" class="img-fluid" src="../static/img/coffee.png"
-                        alt="Ícone de uma xícara de café">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="pt-4 d-flex justify-content-center align-items-end">
-        <div id="swipe" class="align-items-center">
-            <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-            <a href="#about">Arraste para mais</a>
+        <div class="coffee">
+            <div class="coffee-background"></div>
+            <img id="coffee-icon" src="{{ url_for('static', filename='img/coffee.png') }}" alt="Ícone de uma xícara de café">
         </div>
     </div>
 </section>

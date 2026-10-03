@@ -1,0 +1,33 @@
+{
+    "name": "Gabriel Moscarde",
+    "role": "Engenheiro de Dados",
+    "location": "Rio de Janeiro · RJ",
+    "email": "gabrielmoscarde@outlook.com",
+    "pitch": "Engenheiro de dados na Secretaria Municipal de Saúde do Rio de Janeiro.",
+    "social": [
+        {
+            "name": "LinkedIn",
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/in/moscarde",
+            "label": "linkedin.com/in/moscarde"
+        },
+        {
+            "name": "GitHub",
+            "icon": "github",
+            "url": "https://github.com/Moscarde",
+            "label": "github.com/Moscarde"
+        },
+        {
+            "name": "Medium",
+            "icon": "medium",
+            "url": "https://moscarde.medium.com/",
+            "label": "moscarde.medium.com"
+        }
+    ],
+    "about": [
+        "Sou engenheiro de dados na <strong>Secretaria Municipal de Saúde do Rio de Janeiro</strong>. Trabalho com integração entre sistemas, ingestão, orquestração, modelagem e qualidade de dados hospitalares: internações, altas, leitos, atendimentos e cirurgias.",
+        "Também desenvolvo o Portal DIID, a plataforma interna da divisão, que reúne dados, painéis e aplicações usados pelas equipes da secretaria.",
+        "No dia a dia uso Python, SQL, PostgreSQL, Apache Airflow, Airbyte, dbt, Docker e Django. Comecei na área em 2023, como voluntário na SouJunior. Antes disso, trabalhei com vendas e coordenação de produção."
+    ],
+    "year": 2026
+}
