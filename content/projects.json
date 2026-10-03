@@ -1,6 +1,29 @@
 [
     {
         "featured": true,
+        "date": "nov 2025 – atual",
+        "kind": "engenharia de dados · SMS-Rio",
+        "title": "Plataforma de dados SUBHUE",
+        "description": "Plataforma de dados da subsecretaria hospitalar da SMS-Rio: Airflow 3 orquestra as ingestões e as transformações em dbt.",
+        "modules": [
+            "Ingestão de sistemas hospitalares, prontuário eletrônico e bases públicas (TabNet SIA/SIH, DATASUS)",
+            "Modelagem dbt em camadas raw, silver, gold e marts, com testes e documentação",
+            "Modelos de emergência, censo hospitalar, LOS e Boarding",
+            "Boletim diário da rede em HTML, mobile e PDF",
+            "Migração das rotinas agendadas em .bat e cron para Airflow, primeiro em Docker Compose e depois no Astronomer Runtime"
+        ],
+        "stack": [
+            "Airflow 3",
+            "dbt",
+            "Cosmos",
+            "PostgreSQL",
+            "Docker"
+        ],
+        "links": [],
+        "private": true
+    },
+    {
+        "featured": true,
         "date": "abr 2026 – atual",
         "kind": "full stack · SMS-Rio",
         "title": "Portal DIID",
